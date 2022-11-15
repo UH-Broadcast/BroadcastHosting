@@ -26,6 +26,8 @@ const SignIn = () => {
     Meteor.loginWithPassword(email, password, (err) => {
       if (err) {
         setError(err.reason);
+      } else if (!email.contain('.hawaii.edu')) {
+        setError(err.reason);
       } else {
         setRedirect(true);
       }
