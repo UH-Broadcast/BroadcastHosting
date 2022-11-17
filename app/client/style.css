@@ -15,11 +15,11 @@ body {
 }
 
 .landing-page-white {
-
+ background: white;
 }
 
-.landing-page-white {
-
+.landing-page-green {
+  background: darkgreen;
 }
 
 /* Set the alert background on the signin and signup pages. */
