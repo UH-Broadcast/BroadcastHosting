@@ -3,7 +3,7 @@ import { Col, Container, Image, Row } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" fluid className="py-3" style={{ backgroundImage: 'url(/images/ManoaWallpaper.jpg)' }}>
+  <Container id="landing-page" fluid className="py-3">
     <Row className="align-middle text-center">
       <Col className="d-flex flex-column justify-content-center">
         <h1>Welcome to UH Broadcast</h1>
