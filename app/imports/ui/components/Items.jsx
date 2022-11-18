@@ -4,7 +4,7 @@ import { Card, Container, Image } from 'react-bootstrap';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Item = ({ item }) => (
-  <Card>
+  <Card className="h-100">
     <Card.Header>
       <Container>
         <Image src={item.image} width={75} />
