@@ -3,23 +3,43 @@
 
 /* Set up some CSS variables to theme the application. */
 :root {
-  --matr-navbar-bg: #ECECEC;
-  --matr-navbar-bg-rgb: 236, 236, 236;
+  --matr-navbar-bg: #376551;
+  --matr-navbar-bg-rgb: 10, 68, 10;
+  --matr-navbar-text-color: white;
+  --matr-navbar-highlight-text: white;
 }
 
 /* Change bootstrap variable values.
  See https://getbootstrap.com/docs/5.2/customize/css-variables/
  */
 body {
-  --bs-light-rgb: var(--matr-navbar-bg-rgb);
+  --bs-dark: var(--matr-navbar-bg);
+  --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+}
+
+
+body .navbar {
+  --bs-navbar-active-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-brand-color: var(--matr-navbar-text-color);
+  --bs-navbar-brand-hover-color: var(--matr-navbar-highlight-text);
+  --bs-navbar-color: var(--matr-navbar-text-color);
+  --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
+}
+
+.navbar a.nav-link.active {
+  color: var(--matr-navbar-highlight-text);
+}
+
+footer, footer a {
+  color: var(--matr-navbar-text-color);
 }
 
 .landing-page-white {
- background: white;
+
 }
 
-.landing-page-green {
-  background: darkgreen;
+.landing-page-white {
+
 }
 
 /* Set the alert background on the signin and signup pages. */
@@ -34,28 +54,18 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
-#adminhome {
-  background-image: url("public/images/Hawaii-Hall.jpg");
-}
-#admin-home-title{
-  background-color: green;
-  color: white;
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
+
+.navbar {
+  font-family: Broadway;
+  font-size: 20px;
+  align-items: center;
 }
 
-#adminbutton {
-  background-color: green;
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
+.nav-link {
+  margin-right: 30px;
 }
 
-#admin-search-title {
-  background-color: green;
-  color: white;
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
+#manoaBackground {
+  background-image: url("public/images/ManoaWallpaper.jpg");
+
 }
