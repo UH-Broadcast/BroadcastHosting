@@ -34,3 +34,28 @@ body {
   padding-top: 10px;
   padding-bottom: 20px;
 }
+#adminhome {
+  background-image: url("public/images/Hawaii-Hall.jpg");
+}
+#admin-home-title{
+  background-color: green;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+#adminbutton {
+  background-color: green;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+#admin-search-title {
+  background-color: green;
+  color: white;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
