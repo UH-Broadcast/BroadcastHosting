@@ -14,16 +14,16 @@ const Landing = () => (
       <h2 style={{ color: '#376551' }}>Recent</h2>
       <Row md={1} lg={2}>
         <Col xs={6}>
-          <Image src="/images/item1-example.png" width={250}/>
+          <Image src="/images/item1-example.png" width={250} />
         </Col>
         <Col xs={6}>
-          <Image src="/images/item2-example.png" width={250}/>
+          <Image src="/images/item2-example.png" width={250} />
         </Col>
         <Col xs={6}>
-          <Image src="/images/item3-example.png" width={250}/>
+          <Image src="/images/item3-example.png" width={250} />
         </Col>
         <Col xs={6}>
-          <Image src="/images/item4-example.png" width={250}/>
+          <Image src="/images/item4-example.png" width={250} />
         </Col>
       </Row>
     </Container>
