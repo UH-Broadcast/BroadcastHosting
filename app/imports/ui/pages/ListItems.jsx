@@ -3,8 +3,8 @@ import { Meteor } from 'meteor/meteor';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
 import LoadingSpinner from '../components/LoadingSpinner';
-import Items from '../components/Items';
 import { ItemsDatabase } from '../../api/Items/Item';
+import Items from '../components/Items';
 
 /* Renders a table containing all of the Items documents. Use <ItemData> to render each row. */
 const ListItems = () => {
@@ -31,7 +31,7 @@ const ListItems = () => {
             <h2>List Items</h2>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-4">
-            {items.map((item) => (<Col key={item._id}><Items item={item} /> </Col>))}
+            {items.map((item) => (<Col key={item._id}><Items item={item} collection={ItemsDatabase.collection} /> </Col>))}
           </Row>
         </Col>
       </Row>
