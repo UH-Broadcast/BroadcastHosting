@@ -16,6 +16,7 @@ import AddListing from '../pages/AddListing';
 import ListItems from '../pages/ListItems';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
+import AdminHome from '../pages/AdminHome';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -33,6 +34,7 @@ const App = () => (
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
         <Route path="/adminitem" element={<AdminProtectedRoute><ListItemsAdmin /></AdminProtectedRoute>} />
+        <Route path="/adminhome" element={<AdminProtectedRoute><AdminHome /></AdminProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
