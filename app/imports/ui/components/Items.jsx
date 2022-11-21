@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Card, Container, Image } from 'react-bootstrap';
-import { SelectField } from 'uniforms-bootstrap5';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Item = ({ item, collection }) => {
