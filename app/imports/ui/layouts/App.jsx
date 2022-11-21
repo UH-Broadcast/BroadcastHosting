@@ -5,6 +5,7 @@ import { Roles } from 'meteor/alanning:roles';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
+// import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';
 import NotFound from '../pages/NotFound';
 import SignUp from '../pages/SignUp';
@@ -16,6 +17,7 @@ import AddListing from '../pages/AddListing';
 import ListItems from '../pages/ListItems';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
+import AdminHome from '../pages/AdminHome';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -33,6 +35,7 @@ const App = () => (
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
         <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
         <Route path="/adminitem" element={<AdminProtectedRoute><ListItemsAdmin /></AdminProtectedRoute>} />
+        <Route path="/adminhome" element={<AdminProtectedRoute><AdminHome /></AdminProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
