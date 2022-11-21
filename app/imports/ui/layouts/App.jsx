@@ -15,6 +15,8 @@ import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import AddListing from '../pages/AddListing';
 import ListItems from '../pages/ListItems';
+import ListItemsAdmin from '../pages/ListItemsAdmin';
+import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AdminHome from '../pages/AdminHome';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -31,6 +33,8 @@ const App = () => (
         <Route path="/list" element={<ProtectedRoute><ListItems /></ProtectedRoute>} />
         <Route path="/add" element={<ProtectedRoute><AddListing /></ProtectedRoute>} />
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
+        <Route path="/admin" element={<AdminProtectedRoute><ListStuffAdmin /></AdminProtectedRoute>} />
+        <Route path="/adminitem" element={<AdminProtectedRoute><ListItemsAdmin /></AdminProtectedRoute>} />
         <Route path="/adminhome" element={<AdminProtectedRoute><AdminHome /></AdminProtectedRoute>} />
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />

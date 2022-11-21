@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Button, Card, Container, Image } from 'react-bootstrap';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
-const Item = ({ item, collection }) => {
+const ItemAdmin = ({ item, collection }) => {
   const removeItem = (docID) => {
     console.log(`The item to remove is ${docID}`);
     collection.remove(docID);
@@ -22,15 +22,17 @@ const Item = ({ item, collection }) => {
         <Card.Text>
           Description: {item.description}
           <hr />
-          owner Contact: {item.ownerInformation}
+          Owner Contact: {item.ownerInformation}
         </Card.Text>
         <Button variant="danger" onClick={() => removeItem(item._id)}> Delete this item</Button>
       </Card.Body>
+      <Card.Footer>Owner ID: {item.owner} </Card.Footer>
     </Card>
   );
 };
+
 // Require a document to be passed to this component.
-Item.propTypes = {
+ItemAdmin.propTypes = {
   item: PropTypes.shape({
     name: PropTypes.string,
     price: PropTypes.number,
@@ -44,4 +46,4 @@ Item.propTypes = {
   collection: PropTypes.object.isRequired,
 };
 
-export default Item;
+export default ItemAdmin;
