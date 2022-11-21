@@ -19,6 +19,11 @@ class ItemsCollection {
       description: String,
       ownerInformation: String,
       owner: String,
+      category: {
+        type: String,
+        allowedValues: ['Clothing', 'Purses', 'Shoes', 'Instruments', 'Jewelry', 'Furniture', 'Books', 'Toys', 'Appliances', 'Other'],
+        defaultValue: 'Other',
+      },
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);

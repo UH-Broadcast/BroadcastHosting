@@ -22,6 +22,8 @@ const ItemAdmin = ({ item, collection }) => {
         <Card.Text>
           Description: {item.description}
           <hr />
+          Category: {item.category}
+          <hr />
           Owner Contact: {item.ownerInformation}
         </Card.Text>
         <Button variant="danger" onClick={() => removeItem(item._id)}> Delete this item</Button>
@@ -40,6 +42,7 @@ ItemAdmin.propTypes = {
     description: PropTypes.string,
     ownerInformation: PropTypes.string,
     owner: PropTypes.string,
+    category: PropTypes.string,
     _id: PropTypes.string,
   }).isRequired,
   // eslint-disable-next-line react/forbid-prop-types

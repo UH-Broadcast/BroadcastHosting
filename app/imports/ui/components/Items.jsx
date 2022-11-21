@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Card, Container, Image } from 'react-bootstrap';
+import { SelectField } from 'uniforms-bootstrap5';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Item = ({ item, collection }) => {
@@ -22,6 +23,8 @@ const Item = ({ item, collection }) => {
         <Card.Text>
           Description: {item.description}
           <hr />
+          Category: {item.category}
+          <hr />
           owner Contact: {item.ownerInformation}
         </Card.Text>
         <Button variant="danger" onClick={() => removeItem(item._id)}> Delete this item</Button>
@@ -38,6 +41,7 @@ Item.propTypes = {
     description: PropTypes.string,
     ownerInformation: PropTypes.string,
     owner: PropTypes.string,
+    category: PropTypes.string,
     _id: PropTypes.string,
   }).isRequired,
   // eslint-disable-next-line react/forbid-prop-types
