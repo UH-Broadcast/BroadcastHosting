@@ -1,8 +1,7 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useTracker } from 'meteor/react-meteor-data';
-import { Link } from 'react-router-dom';
 import LoadingSpinner from '../components/LoadingSpinner';
 import { ItemsDatabase } from '../../api/Items/Item';
 import Items from '../components/Items';
@@ -30,8 +29,6 @@ const ListItems = () => {
         <Col>
           <Col className="text-center">
             <h2>List Items</h2>
-            <Button id="listitembutton"><Link to="/categories"> Sort by Category </Link>
-            </Button>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-4">
             {items.map((item) => (<Col key={item._id}><Items item={item} collection={ItemsDatabase.collection} /> </Col>))}
