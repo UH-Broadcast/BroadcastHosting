@@ -15,7 +15,8 @@ const Categories = () => {
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Items documents
-    const ItemData = ItemsDatabase.collection.find({}).fetch();
+    const ItemData = ItemsDatabase.collection.find({ }).fetch();
+
     return {
       items: ItemData,
       ready: rdy,
@@ -42,6 +43,7 @@ const Categories = () => {
               <option value="Other1">Other</option>
             </select>
           </Col>
+          <br />
           <Row xs={1} md={2} lg={3} className="g-4">
             {items.map((item) => (<Col key={item._id}><AllItems item={item} collection={ItemsDatabase.collection} /> </Col>))}
           </Row>
