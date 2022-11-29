@@ -36,15 +36,15 @@ const MakeOffer = () => {
   };
 
   return (ready ? (
-    <Container className="container-fluid">
+    <Container id="make-offer-page" className="container-fluid">
       <Row className="justify-content-center">
         <Col xs={5}>
           <Col className="text-center"><h2>Make Offer</h2></Col>
           <AutoForm schema={bridge} onSubmit={data => submit(data)} model={items}>
             <Card>
               <Card.Body>
-                <NumField name="offer" decimal={null} />
-                <SubmitField value="Submit" />
+                <NumField id="makeOfferAmount" name="offer" decimal={null} />
+                <SubmitField id="makeOfferSubmit" value="Submit" />
                 <ErrorsField />
                 <HiddenField name="owner" />
               </Card.Body>
