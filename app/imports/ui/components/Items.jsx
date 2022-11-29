@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Button, Card, Container, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 const Item = ({ item, collection }) => {
@@ -17,6 +18,7 @@ const Item = ({ item, collection }) => {
         </Container>
         <Card.Title>Name: {item.name}</Card.Title>
         <Card.Subtitle>Price: ${item.price}</Card.Subtitle>
+        <Card.Subtitle>Offer: ${item.offer}</Card.Subtitle>
       </Card.Header>
       <Card.Body>
         <Card.Text>
@@ -26,6 +28,7 @@ const Item = ({ item, collection }) => {
           <hr />
           owner Contact: {item.ownerInformation}
         </Card.Text>
+        <Link to={`/makeoffer/${item._id}`}>Make Offer</Link>
         <Button variant="danger" onClick={() => removeItem(item._id)}> Delete this item</Button>
       </Card.Body>
     </Card>
@@ -36,6 +39,7 @@ Item.propTypes = {
   item: PropTypes.shape({
     name: PropTypes.string,
     price: PropTypes.number,
+    offer: PropTypes.number,
     image: PropTypes.string,
     description: PropTypes.string,
     ownerInformation: PropTypes.string,
