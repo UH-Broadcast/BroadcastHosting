@@ -38,4 +38,5 @@ test.only('Test the Add Listing page', async (testController) => {
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoAddListingPage(testController);
   await addListingPage.isDisplayed(testController);
+  await addListingPage.addListing(testController);
 });
