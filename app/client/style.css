@@ -69,3 +69,11 @@ footer, footer a {
   background-image: url("public/images/ManoaWallpaper.jpg");
 
 }
+/*
+#adminbutton {
+  background-color: darkgreen;
+} */
+
+#listitembutton {
+  background-color: #376551;
+}
