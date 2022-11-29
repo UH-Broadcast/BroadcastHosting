@@ -1,5 +1,7 @@
 import React from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import ItemDetails from '../components/ItemDetails';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
@@ -14,16 +16,24 @@ const Landing = () => (
       <h2 style={{ color: '#376551' }}>Recent</h2>
       <Row md={1} lg={2}>
         <Col xs={6}>
-          <Image src="/images/item1-example.png" width={250} />
+          <Link to={`/makeoffer/${ItemDetails._id}`}>
+            <Image src="/images/item1-example.png" width={250} />
+          </Link>
         </Col>
         <Col xs={6}>
-          <Image src="/images/item2-example.png" width={250} />
+          <a href="/list">
+            <Image src="/images/item2-example.png" width={250} />
+          </a>
         </Col>
         <Col xs={6}>
-          <Image src="/images/item3-example.png" width={250} />
+          <a href="/list">
+            <Image src="/images/item3-example.png" width={250} />
+          </a>
         </Col>
         <Col xs={6}>
-          <Image src="/images/item4-example.png" width={250} />
+          <a href="/list">
+            <Image src="/images/item4-example.png" width={250} />
+          </a>
         </Col>
       </Row>
     </Container>
