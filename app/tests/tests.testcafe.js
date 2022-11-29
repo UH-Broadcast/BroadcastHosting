@@ -2,6 +2,9 @@ import { landingPage } from './landing.page';
 import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
+import { listItemPage } from './listItem.page';
+// import { adminItemPage } from './adminItem.page';
+import { addListingPage } from './addlisting.page';
 
 /* global fixture:false, test:false */
 
@@ -21,4 +24,18 @@ test('Test that signin and signout work', async (testController) => {
   await navBar.isLoggedIn(testController, credentials.username);
   await navBar.logout(testController);
   await signoutPage.isDisplayed(testController);
+});
+
+test('Test the List Item page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoListItemPage(testController);
+  await listItemPage.isDisplayed(testController);
+});
+
+test.only('Test the Add Listing page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoAddListingPage(testController);
+  await addListingPage.isDisplayed(testController);
 });
