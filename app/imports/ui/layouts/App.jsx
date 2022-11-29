@@ -18,6 +18,7 @@ import ListItems from '../pages/ListItems';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
 import AdminHome from '../pages/AdminHome';
 import Categories from '../pages/Categories';
+import MakeOffer from '../pages/MakeOffer';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -32,6 +33,7 @@ const App = () => (
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} />
         <Route path="/list" element={<ProtectedRoute><ListItems /></ProtectedRoute>} />
+        <Route path="/makeoffer/:_id" element={<MakeOffer />} />
         <Route path="/add" element={<ProtectedRoute><AddListing /></ProtectedRoute>} />
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
         <Route path="/adminitem" element={<AdminProtectedRoute><ListItemsAdmin /></AdminProtectedRoute>} />

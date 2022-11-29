@@ -15,6 +15,7 @@ class ItemsCollection {
     this.schema = new SimpleSchema({
       name: String,
       price: Number,
+      offer: Number,
       image: String,
       description: String,
       ownerInformation: String,
