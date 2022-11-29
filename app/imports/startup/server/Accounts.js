@@ -16,12 +16,10 @@ const createUser = (email, password, role) => {
       Roles.createRole(role, { unlessExists: true });
       Roles.addUsersToRoles(userID, 'admin');
     }
-  }
-  else {
+  } else {
     console.log('User must be in .hawaii.edu domain');
   }
 };
-
 // When running app for first time, pass a settings file to set up a default user account.
 if (Meteor.users.find().count() === 0) {
   if (Meteor.settings.defaultAccounts) {
