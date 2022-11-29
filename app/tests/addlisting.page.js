@@ -28,12 +28,12 @@ class AddListingPage {
     await testController.typeText('#addListingFormDescription', description);
     await testController.typeText('#addListingFormOwnerInfo', ownerInfo);
 
-    // Select two interests these are the defined categories.
-    const interestsSelector = Selector('#addListingFormCategory div.form-check');
-    await testController.click(interestsSelector.nth(5));
-
-    await testController.click('#addListingFormSubmit input.btn.btn-primary');
-    await testController.click(Selector('.swal-button--confirm'));
+    // Select a category these are the defined categories.
+    // const interestsSelector = Selector('#addListingFormCategory div.form-check');
+    // await testController.click(interestsSelector.nth(5));
+    //
+    // await testController.click('#addListingFormSubmit input.btn.btn-primary');
+    // await testController.click(Selector('.swal-button--confirm'));
   }
 }
 
