@@ -28,7 +28,7 @@ const Item = ({ item, collection }) => {
           <hr />
           owner Contact: {item.ownerInformation}
         </Card.Text>
-        <Link to={`/makeoffer/${item._id}`}>Make Offer</Link>
+        <Link id="make-offer-list" to={`/makeoffer/${item._id}`}>Make Offer</Link>
         <Button variant="danger" onClick={() => removeItem(item._id)}> Delete this item</Button>
       </Card.Body>
     </Card>
