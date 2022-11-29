@@ -6,14 +6,19 @@ import { Roles } from 'meteor/alanning:roles';
 
 const createUser = (email, password, role) => {
   console.log(`  Creating user ${email}.`);
-  const userID = Accounts.createUser({
-    username: email,
-    email: email,
-    password: password,
-  });
-  if (role === 'admin') {
-    Roles.createRole(role, { unlessExists: true });
-    Roles.addUsersToRoles(userID, 'admin');
+  if (email.includes('@hawaii.edu')) {
+    const userID = Accounts.createUser({
+      username: email,
+      email: email,
+      password: password,
+    });
+    if (role === 'admin') {
+      Roles.createRole(role, { unlessExists: true });
+      Roles.addUsersToRoles(userID, 'admin');
+    }
+  }
+  else {
+    console.log('User must be in .hawaii.edu domain');
   }
 };
 
