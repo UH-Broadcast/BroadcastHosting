@@ -58,7 +58,11 @@ class NavBar {
   // }
 
   async gotoListItemPage(testController) {
-    await testController.click('#list-Items-nav')
+    await testController.click('#list-Items-nav');
+  }
+
+  async gotoAddListingPage(testController) {
+    await testController.click('#add-listing-nav');
   }
 }
 

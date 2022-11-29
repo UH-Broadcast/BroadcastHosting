@@ -46,20 +46,20 @@ const AddListing = () => {
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
   let fRef = null;
   return (
-    <Container className="py-3">
+    <Container id="add-listing-page" className="py-3">
       <Row className="justify-content-center">
         <Col xs={5}>
           <Col className="text-center"><h2>Add Listing</h2></Col>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <TextField name="name" />
-                <NumField name="price" decimal={null} />
-                <TextField name="image" />
-                <LongTextField name="description" />
-                <TextField name="ownerInformation" />
-                <SelectField name="category" />
-                <SubmitField value="Submit" />
+                <TextField id="addListingFormName" name="name" />
+                <NumField id="addListingFormPrice" name="price" decimal={null} />
+                <TextField id="addListingFormImage" name="image" />
+                <LongTextField id="addListingFormDescription" name="description" />
+                <TextField id="addListingFormOwnerInfo" name="ownerInformation" />
+                <SelectField id="addListingFormCategory" name="category" />
+                <SubmitField id="addListingFormSubmit" value="Submit" />
                 <ErrorsField />
               </Card.Body>
             </Card>
