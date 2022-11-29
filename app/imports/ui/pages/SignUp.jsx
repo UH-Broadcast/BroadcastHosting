@@ -23,14 +23,19 @@ const SignUp = ({ location }) => {
   /* Handle SignUp submission. Create user account and a profile entry, then redirect to the home page. */
   const submit = (doc) => {
     const { email, password } = doc;
-    Accounts.createUser({ email, username: email, password }, (err) => {
-      if (err) {
-        setError(err.reason);
-      } else {
-        setError('');
-        setRedirectToRef(true);
-      }
-    });
+    if (email.includes('@hawaii.edu')) {
+      Accounts.createUser({ email, username: email, password }, (err) => {
+        if (err) {
+          setError(err.reason);
+        } else {
+          setError('');
+          setRedirectToRef(true);
+        }
+      });
+    } else {
+      console.log('User must be in @hawaii domain');
+      setError('');
+    }
   };
 
   /* Display the signup form. Redirect to add page after successful registration and login. */
