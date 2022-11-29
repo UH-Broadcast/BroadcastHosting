@@ -53,13 +53,13 @@ const AddListing = () => {
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>
-                <TextField name="name" />
-                <NumField name="price" decimal={null} />
-                <TextField name="image" />
-                <LongTextField name="description" />
-                <TextField name="ownerInformation" />
-                <SelectField name="category" />
-                <SubmitField value="Submit" />
+                <TextField id="addListingFormName" name="name" />
+                <NumField id="addListingFormPrice" name="price" decimal={null} />
+                <TextField id="addListingFormImage" name="image" />
+                <LongTextField id="addListingFormDescription" name="description" />
+                <TextField id="addListingFormOwnerInfo" name="ownerInformation" />
+                <SelectField id="addListingFormCategory" name="category" />
+                <SubmitField id="addListingFormSubmit" value="Submit" />
                 <ErrorsField />
               </Card.Body>
             </Card>
