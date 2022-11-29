@@ -5,6 +5,7 @@ import { navBar } from './navbar.component';
 import { listItemPage } from './listItem.page';
 // import { adminItemPage } from './adminItem.page';
 import { addListingPage } from './addlisting.page';
+import { makeOfferPage } from './makeoffer.page';
 
 /* global fixture:false, test:false */
 
@@ -33,10 +34,20 @@ test('Test the List Item page', async (testController) => {
   await listItemPage.isDisplayed(testController);
 });
 
-test.only('Test the Add Listing page', async (testController) => {
+test('Test the Add Listing page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoAddListingPage(testController);
   await addListingPage.isDisplayed(testController);
   await addListingPage.addListing(testController);
+});
+
+test.only('Test the Make Offer page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoListItemPage(testController);
+  await listItemPage.isDisplayed(testController);
+  await listItemPage.gotoMakeOfferPage(testController);
+  await makeOfferPage.isDisplayed(testController);
+  await makeOfferPage.makeOffer(testController);
 });

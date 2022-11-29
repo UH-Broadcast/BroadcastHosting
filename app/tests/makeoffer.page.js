@@ -1,8 +1,8 @@
 import { Selector } from 'testcafe';
 
-class ListItemPage {
+class MakeOfferPage {
   constructor() {
-    this.pageId = '#list-Item-page';
+    this.pageId = '#make-offer-page';
     this.pageSelector = Selector(this.pageId);
   }
 
@@ -12,10 +12,14 @@ class ListItemPage {
     await testController.wait(10000).expect(this.pageSelector.exists).ok();
   }
 
-  /** go to makeoffer page from listitem page */
-  async gotoMakeOfferPage(testController) {
-    await testController.click('#make-offer-list');
+  async makeOffer(testController) {
+    const offer = '12313313';
+
+    await this.isDisplayed(testController);
+    await testController.typeText('#makeOfferAmount', offer);
+    await testController.click('#makeOfferSubmit input.btn.btn-primary');
   }
+
 }
 
-export const listItemPage = new ListItemPage();
+export const makeOfferPage = new MakeOfferPage();
