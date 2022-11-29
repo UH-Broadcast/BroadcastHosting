@@ -3,7 +3,7 @@ import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { listItemPage } from './listItem.page';
-import { adminItemPage } from './adminItem.page'
+import { adminItemPage } from './adminItem.page';
 
 /* global fixture:false, test:false */
 

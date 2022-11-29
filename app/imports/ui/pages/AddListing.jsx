@@ -43,7 +43,7 @@ const AddListing = () => {
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
   let fRef = null;
   return (
-    <Container className="py-3">
+    <Container id="add-listing-page" className="py-3">
       <Row className="justify-content-center">
         <Col xs={5}>
           <Col className="text-center"><h2>Add Listing</h2></Col>
