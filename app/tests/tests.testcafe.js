@@ -3,6 +3,7 @@ import { signinPage } from './signin.page';
 import { signoutPage } from './signout.page';
 import { navBar } from './navbar.component';
 import { listItemPage } from './listItem.page';
+import { categoriesPage } from './categories';
 // import { adminItemPage } from './adminItem.page';
 import { addListingPage } from './addlisting.page';
 import { makeOfferPage } from './makeoffer.page';
@@ -11,6 +12,7 @@ import { makeOfferPage } from './makeoffer.page';
 
 /** Credentials for one of the sample users defined in settings.development.json. */
 const credentials = { username: 'john@foo.com', password: 'changeme' };
+/* const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' }; */
 
 fixture('meteor-react-bootstrap-template localhost test with default db')
   .page('http://localhost:3000');
@@ -50,4 +52,11 @@ test.only('Test the Make Offer page', async (testController) => {
   await listItemPage.gotoMakeOfferPage(testController);
   await makeOfferPage.isDisplayed(testController);
   await makeOfferPage.makeOffer(testController);
+});
+
+test.only('Test the Categories page', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentials.username, credentials.password);
+  await navBar.gotoCategoriesPage(testController);
+  await categoriesPage.isDisplayed(testController);
 });
