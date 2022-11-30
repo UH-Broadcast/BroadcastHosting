@@ -11,8 +11,8 @@ import { makeOfferPage } from './makeoffer.page';
 /* global fixture:false, test:false */
 
 /** Credentials for one of the sample users defined in settings.development.json. */
-const credentials = { username: 'john@foo.com', password: 'changeme' };
-const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' };
+const credentials = { username: 'john@hawaii.edu', password: 'changeme' };
+const credentialsAdmin = { username: 'admin@hawaii.edu', password: 'changeme' };
 
 fixture('UH-Broadcast localhost test with default db')
   .page('http://localhost:3000');
