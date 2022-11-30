@@ -11,10 +11,10 @@
   ],
 
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    { "name": "Basket", "quantity": 3, "owner": "john@hawaii.edu", "condition": "excellent" },
+    { "name": "Bicycle", "quantity": 2, "owner": "john@hawaii.edu", "condition": "poor" },
+    { "name": "Banana", "quantity": 2, "owner": "admin@hawaii.edu", "condition": "good" },
+    { "name": "Boogie Board", "quantity": 2, "owner": "admin@hawaii.edu", "condition": "excellent" }
   ],
 
   "defaultItem": [{
@@ -22,42 +22,42 @@
     "image": "https://www.zales.com/productimages/processed/V-20348879_0_800.jpg?pristine=true",
     "description": "G-shock",
     "ownerInformation": "wei@hawaii.edu or 808-888-8880",
-    "owner": "john@foo.com"
+    "owner": "john@hawaii.edu"
   },
     {
       "name": "Nike shoe", "price": "95", "offer": "0", "category": "Shoes",
       "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQGHmo1AC6N-rRy64iGbQkkRUXgA0sVhILDTfb0lVezdw7L-tscChfqU12F_1J3E9RMWzQN1PYGI2s&usqp=CAc",
       "description": "White, size large and brand new",
       "ownerInformation": "hubert@hawaii.edu or 808-888-8881",
-      "owner": "john@foo.com"
+      "owner": "john@hawaii.edu"
     },
     {
       "name": "Yamaha Guitar", "price": "169.66", "offer": "0", "category": "Instruments",
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSJBomLdyzD8R7u-Hpp6Ywn2_Rxc2kNgSOo2x-ZvTVH82B7puyLUZMS0Cw9GycFANwpT77v5QGb&usqp=CAc",
       "description": "Yamaha F325D Guitar",
       "ownerInformation": "sydney@hawaii.edu or 808-888-8882",
-      "owner": "admin@foo.com"
+      "owner": "admin@hawaii.edu"
     },
     {
       "name": "Textbook", "price": "25.00", "offer": "0", "category": "Books",
       "image": "/images/item1-example.png",
       "description": "Yiddish Textbook",
       "ownerInformation": "bekim3@hawaii.edu or 808-888-8882",
-      "owner": "john@foo.com"
+      "owner": "john@hawaii.edu"
     },
     {
       "name": "Nike Shoe", "price": "75.00", "offer": "0", "category": "Shoes",
       "image": "/images/item2-example.png",
       "description": "Nike Shoe for sale",
       "ownerInformation": "bekim3@hawaii.edu or 808-888-8882",
-      "owner": "john@foo.com"
+      "owner": "john@hawaii.edu"
     },
     {
       "name": "Ukulele", "price": "40.00", "offer": "0", "category": "Instruments",
       "image": "/images/item4-example.png",
       "description": "Ukulele for sale",
       "ownerInformation": "bekim3@hawaii.edu or 808-888-8882",
-      "owner": "john@foo.com"
+      "owner": "john@hawaii.edu"
     }
   ]
 }
