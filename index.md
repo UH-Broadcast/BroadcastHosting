@@ -112,3 +112,8 @@ After implementing the basic functionality, here are ideas for more advanced fea
 
 * A rating system for buyers and sellers.
 * Map-based interface to indicate where goods are.
+
+## Developer's Guide
+All updated source codes are within the master branch. When working on solving an issue of the project, please clone the source code locally using GitHub Desktop.
+Please do not work on the issue assigned inside the main branch. Make a new branch and resolve the issue. Before merging the changes to the master branch, have a teammate review the modification to ensure any collisions are appropriately resolved. 
+Our application uses Meteor and React. Navigate into the app directory in the terminal, and run meteor npm install. After successfully installing the Meteor, run Meteor npm run start to deploy the application locally. 
