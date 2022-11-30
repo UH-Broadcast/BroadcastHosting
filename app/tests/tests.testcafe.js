@@ -12,7 +12,7 @@ import { makeOfferPage } from './makeoffer.page';
 
 /** Credentials for one of the sample users defined in settings.development.json. */
 const credentials = { username: 'john@foo.com', password: 'changeme' };
-/* const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' }; */
+const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' };
 
 fixture('UH-Broadcast localhost test with default db')
   .page('http://localhost:3000');
@@ -59,4 +59,12 @@ test('Test the Categories page', async (testController) => {
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoCategoriesPage(testController);
   await categoriesPage.isDisplayed(testController);
+});
+
+test('Test that Admin SignIn and SignOut work', async (testController) => {
+  await navBar.gotoSignInPage(testController);
+  await signinPage.signin(testController, credentialsAdmin.username, credentialsAdmin.password);
+  await navBar.isLoggedIn(testController, credentialsAdmin.username);
+  await navBar.logout(testController);
+  await signoutPage.isDisplayed(testController);
 });
