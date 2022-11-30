@@ -14,7 +14,7 @@ import { makeOfferPage } from './makeoffer.page';
 const credentials = { username: 'john@foo.com', password: 'changeme' };
 /* const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' }; */
 
-fixture('meteor-react-bootstrap-template localhost test with default db')
+fixture('UH-Broadcast localhost test with default db')
   .page('http://localhost:3000');
 
 test('Test that landing page shows up', async (testController) => {

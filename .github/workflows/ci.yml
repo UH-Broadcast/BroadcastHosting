@@ -1,4 +1,4 @@
-name: ci-uh-broadcast
+name: ci-UH-Broadcast
 
 on:
   push:
