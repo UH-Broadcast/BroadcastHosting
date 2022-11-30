@@ -14,7 +14,7 @@ import { makeOfferPage } from './makeoffer.page';
 const credentials = { username: 'john@foo.com', password: 'changeme' };
 /* const credentialsAdmin = { username: 'admin@foo.com', password: 'changeme' }; */
 
-fixture('meteor-react-bootstrap-template localhost test with default db')
+fixture('UH-Broadcast localhost test with default db')
   .page('http://localhost:3000');
 
 test('Test that landing page shows up', async (testController) => {
@@ -44,7 +44,7 @@ test('Test the Add Listing page', async (testController) => {
   await addListingPage.addListing(testController);
 });
 
-test.only('Test the Make Offer page', async (testController) => {
+test('Test the Make Offer page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoListItemPage(testController);
@@ -54,7 +54,7 @@ test.only('Test the Make Offer page', async (testController) => {
   await makeOfferPage.makeOffer(testController);
 });
 
-test.only('Test the Categories page', async (testController) => {
+test('Test the Categories page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoCategoriesPage(testController);
