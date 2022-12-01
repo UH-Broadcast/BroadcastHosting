@@ -7,7 +7,10 @@
   "defaultAccounts": [
     { "email": "admin@hawaii.edu", "password": "changeme", "role": "admin" },
     { "email": "admin2@hawaii.edu", "password": "changeme", "role": "admin" },
-    { "email": "john@hawaii.edu", "password": "changeme" }
+    { "email": "john@hawaii.edu", "password": "changeme"},
+    { "email": "bob@hawaii.edu", "password": "changeme"},
+    { "email": "sally@hawaii.edu", "password": "changeme"}
+
   ],
 
   "defaultData": [
@@ -22,7 +25,7 @@
     "image": "https://www.zales.com/productimages/processed/V-20348879_0_800.jpg?pristine=true",
     "description": "G-shock",
     "ownerInformation": "wei@hawaii.edu or 808-888-8880",
-    "owner": "john@hawaii.edu"
+    "owner": "bob@hawaii.edu"
   },
     {
       "name": "Nike shoe", "price": "95", "offer": "0", "category": "Shoes",
@@ -36,14 +39,14 @@
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSJBomLdyzD8R7u-Hpp6Ywn2_Rxc2kNgSOo2x-ZvTVH82B7puyLUZMS0Cw9GycFANwpT77v5QGb&usqp=CAc",
       "description": "Yamaha F325D Guitar",
       "ownerInformation": "sydney@hawaii.edu or 808-888-8882",
-      "owner": "admin@hawaii.edu"
+      "owner": "bob@hawaii.edu"
     },
     {
       "name": "Textbook", "price": "25.00", "offer": "0", "category": "Books",
       "image": "/images/item1-example.png",
       "description": "Yiddish Textbook",
       "ownerInformation": "bekim3@hawaii.edu or 808-888-8882",
-      "owner": "john@hawaii.edu"
+      "owner": "sally@hawaii.edu"
     },
     {
       "name": "Nike Shoe", "price": "75.00", "offer": "0", "category": "Shoes",
