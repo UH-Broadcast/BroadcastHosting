@@ -14,7 +14,7 @@ import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
 import AddListing from '../pages/AddListing';
-import ListItems from '../pages/ListItems';
+import UserListings from '../pages/UserListings';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
 import AdminHome from '../pages/AdminHome';
 import Categories from '../pages/Categories';
@@ -32,7 +32,7 @@ const App = () => (
         <Route path="/signout" element={<SignOut />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
         <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} />
-        <Route path="/list" element={<ProtectedRoute><ListItems /></ProtectedRoute>} />
+        <Route path="/list" element={<ProtectedRoute><UserListings /></ProtectedRoute>} />
         <Route path="/makeoffer/:_id" element={<MakeOffer />} />
         <Route path="/add" element={<ProtectedRoute><AddListing /></ProtectedRoute>} />
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
