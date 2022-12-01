@@ -11,7 +11,7 @@ const Categories = () => {
     // Note that this subscription will get cleaned up
     // when your component is unmounted or deps change.
     // Get access to Items documents.
-    const subscription = Meteor.subscribe(ItemsDatabase.adminPublicationName);
+    const subscription = Meteor.subscribe(ItemsDatabase.userPublicationNameAll);
     // Determine if the subscription is ready
     const rdy = subscription.ready();
     // Get the Items documents

@@ -21,6 +21,13 @@ Meteor.publish(ItemsDatabase.userPublicationName, function () {
   return this.ready();
 });
 
+Meteor.publish(ItemsDatabase.userPublicationNameAll, function () {
+  if (this.userId) {
+    return ItemsDatabase.collection.find();
+  }
+  return this.ready();
+});
+
 Meteor.publish(ItemsDatabase.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return ItemsDatabase.collection.find();
