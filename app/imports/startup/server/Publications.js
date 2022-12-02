@@ -2,8 +2,6 @@ import { Meteor } from 'meteor/meteor';
 import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { ItemsDatabase } from '../../api/Items/Item';
-// eslint-disable-next-line import/named
-import { ItemsForListingDatabase } from '../../api/Items/ItemForListing';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
@@ -37,27 +35,6 @@ Meteor.publish(ItemsDatabase.adminPublicationName, function () {
   return this.ready();
 });
 
-Meteor.publish(ItemsForListingDatabase.userPublicationName, function () {
-  if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return ItemsDatabase.collection.find({ owner: username });
-  }
-  return this.ready();
-});
-
-Meteor.publish(ItemsForListingDatabase.userPublicationNameAll, function () {
-  if (this.userId) {
-    return ItemsDatabase.collection.find();
-  }
-  return this.ready();
-});
-
-Meteor.publish(ItemsForListingDatabase.adminPublicationName, function () {
-  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return ItemsDatabase.collection.find();
-  }
-  return this.ready();
-});
 // Admin-level publication.
 // If logged in and with admin role, then publish all documents from all users. Otherwise publish nothing.
 Meteor.publish(Stuffs.adminPublicationName, function () {
