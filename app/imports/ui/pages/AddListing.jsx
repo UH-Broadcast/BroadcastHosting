@@ -5,7 +5,7 @@ import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
-import { ItemsForListingDatabase } from '../../api/Items/ItemForListing';
+import { ItemsDatabase } from '../../api/Items/Item';
 
 // Create a schema to specify the structure of the data to appear in the form.
 const formSchema = new SimpleSchema({
@@ -22,16 +22,16 @@ const formSchema = new SimpleSchema({
 });
 
 const bridge = new SimpleSchema2Bridge(formSchema);
-
 /* Renders the AddStuff page for adding a document. */
 const AddListing = () => {
-
   // On submit, insert the data.
   const submit = (data, formRef) => {
-    const { name, price, offer, image, description, ownerInformation, category } = data;
+    const { name, price, image, description, ownerInformation, category } = data;
     const owner = Meteor.user().username;
-    ItemsForListingDatabase.collection.insert(
-      { name, price, offer, image, description, ownerInformation, category, owner },
+    const offer = '0';
+    console.log(owner, offer);
+    ItemsDatabase.collection.insert(
+      { name, price, offer, category, image, description, ownerInformation, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
