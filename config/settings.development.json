@@ -31,7 +31,7 @@
       "name": "Nike shoe", "price": "95", "offer": "0", "category": "Shoes",
       "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQGHmo1AC6N-rRy64iGbQkkRUXgA0sVhILDTfb0lVezdw7L-tscChfqU12F_1J3E9RMWzQN1PYGI2s&usqp=CAc",
       "description": "White, size large and brand new",
-      "ownerInformation": "hubert@hawaii.edu or 808-888-8881",
+      "ownerInformation": "john@hawaii.edu or 808-888-8881",
       "owner": "john@hawaii.edu"
     },
     {
@@ -52,14 +52,14 @@
       "name": "Nike Shoe", "price": "75.00", "offer": "0", "category": "Shoes",
       "image": "/images/item2-example.png",
       "description": "Nike Shoe for sale",
-      "ownerInformation": "bekim3@hawaii.edu or 808-888-8882",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
       "owner": "john@hawaii.edu"
     },
     {
       "name": "Ukulele", "price": "40.00", "offer": "0", "category": "Instruments",
       "image": "/images/item4-example.png",
       "description": "Ukulele for sale",
-      "ownerInformation": "bekim3@hawaii.edu or 808-888-8882",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
       "owner": "john@hawaii.edu"
     }
   ]
