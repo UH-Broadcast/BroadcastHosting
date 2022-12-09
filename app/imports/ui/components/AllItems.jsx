@@ -30,14 +30,7 @@ const AllItems = ({ item }) => (
 // Require a document to be passed to this component.
 AllItems.propTypes = {
   item: PropTypes.shape({
-    name: PropTypes.string,
-    price: PropTypes.number,
     offer: PropTypes.number,
-    image: PropTypes.string,
-    description: PropTypes.string,
-    ownerInformation: PropTypes.string,
-    owner: PropTypes.string,
-    category: PropTypes.string,
     _id: PropTypes.string,
   }).isRequired,
   // eslint-disable-next-line react/forbid-prop-types
