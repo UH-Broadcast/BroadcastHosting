@@ -28,7 +28,7 @@ const CategoryBarBooks = () => {
       <Col>
         <Navbar bg="light" expand="lg" id="catBar">
           <Nav className="me-auto justify-content-start">
-            <Nav.Link id="every-item-categories-navBar" as={NavLink} to="/CategoryBar" key="itemBar" style={{ color: 'black' }}>All Items</Nav.Link>
+            <Nav.Link id="every-item-categories-navBar" as={NavLink} to="/ItemListing" key="itemBar" style={{ color: 'black' }}>All Items</Nav.Link>
             <Nav.Link id="every-item-categories-navBarShoes" as={NavLink} to="/CategoryBarShoes" key="itemBarShoes" style={{ color: 'black' }}>Shoes</Nav.Link>
             <Nav.Link id="every-item-categories-navBarCloths" as={NavLink} to="/CategoryBarCloths" key="itemBarCloths" style={{ color: 'black' }}>Clothing</Nav.Link>
             <Nav.Link id="every-item-categories-navBarIns" as={NavLink} to="/CategoryBarIns" key="itemBarIns" style={{ color: 'black' }}>Instruments</Nav.Link>

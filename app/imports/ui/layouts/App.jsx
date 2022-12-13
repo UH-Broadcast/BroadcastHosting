@@ -17,7 +17,7 @@ import AddListing from '../pages/AddListing';
 import UserListings from '../pages/UserListings';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
 import AdminHome from '../pages/AdminHome';
-import Categories from '../pages/Categories';
+// import Categories from '../pages/Categories';
 import MakeOffer from '../pages/MakeOffer';
 import CategoryBar from '../Category pages/CategoryBar';
 import CategoryBarShoes from '../Category pages/CategoryBarShoes';
@@ -42,9 +42,9 @@ const App = () => (
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
-        <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} />
+        {/* <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} /> */}
         <Route path="/list" element={<ProtectedRoute><UserListings /></ProtectedRoute>} />
-        <Route path="/CategoryBar" element={<ProtectedRoute><CategoryBar /></ProtectedRoute>} />
+        <Route path="/ItemListing" element={<ProtectedRoute><CategoryBar /></ProtectedRoute>} />
         <Route path="/CategoryBarShoes" element={<ProtectedRoute><CategoryBarShoes /></ProtectedRoute>} />
         <Route path="/CategoryBarCloths" element={<ProtectedRoute><CategoryBarCloth /></ProtectedRoute>} />
         <Route path="/CategoryBarIns" element={<ProtectedRoute><CategoryBarIns /></ProtectedRoute>} />
