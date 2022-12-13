@@ -35,6 +35,76 @@
       "owner": "john@hawaii.edu"
     },
     {
+      "name": "Air Jordan 11", "price": "780", "offer": "0", "category": "Shoes",
+      "image": "https://images.complex.com/complex/images/c_fill,dpr_2.0,f_auto,q_auto,w_1400/fl_lossy,pg_1/nqyq1tt3zvpcrgyaiaiw/air-jordan-11-concord?fimg-ssr",
+      "description": "concord retro 11s",
+      "ownerInformation": "admin@hawaii.edu or 808-888-8881",
+      "owner": "admin@hawaii.edu"
+    },
+    {
+      "name": "Yeezy Boost 350 V2", "price": "100", "offer": "0", "category": "Shoes",
+      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F06%2Fadidas-yeezy-boost-350-v2-granite-release-info-1.jpg?q=90&w=1400&cbr=1&fit=max",
+      "description": "granite, worn once",
+      "ownerInformation": "john@hawaii.edu or 808-888-8881",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "New Balance Shoes", "price": "95", "offer": "0", "category": "Shoes",
+      "image": "https://images.stockx.com/360/New-Balance-550-White-Mint-Green/Images/New-Balance-550-White-Mint-Green/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1651237464&h=384&q=60",
+      "description": "White and Green New Balance 550",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Kkoch Hoodie", "price": "95", "offer": "0", "category": "Clothing",
+      "image": "https://images.stockx.com/images/Anti-Social-Social-Club-Kkoch-Hoodie-Black-2.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1611841873&q=60",
+      "description": "Anti Social Social Club Kkoch Hoodie Black brand new",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Prenelove Purse", "price": "20", "offer": "0", "category": "Purses",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTBTQifBMLOqF8InapI5_301xChyVdwjwXqYut2I5tjYFqPLTwWmg-n1KP7fr4MLINT41ocbJDVARfHA1trdN-p5bG2aiEuhpY-A0_2bzaLTx3xPLY&usqp=CAE",
+      "description": "Prenelove Used Bag",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Floral Ottoman", "price": "120", "offer": "0", "category": "Furniture",
+      "image": "https://images.craigslist.org/00m0m_6LEi6KpIOG9z_0CI0t2_600x450.jpg",
+      "description": "Ottoman from Maui Lifestyle, Used",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Sea of Tranquility", "price": "120", "offer": "0", "category": "Books",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTJrN0GgBu0YpPF31OnzTiLumb-aldYptPrBKJiIX1aAEDuib_XPgzmD9yQVViIGMlhVPujiu9Xud92qtDEprCoKzADqiuihCRKZlM&usqp=CAE",
+      "description": "Sea of Tranquility by Emily St. John Mandel, Used",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Rubicks Cube", "price": "5", "offer": "0", "category": "Toys",
+      "image": "https://u-mercari-images.mercdn.net/photos/m43168389580_1.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1591635796",
+      "description": "Rubicks Cube, Slightly Used",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Waffle Maker", "price": "10", "offer": "0", "category": "Appliances",
+      "image": "https://u-mercari-images.mercdn.net/photos/m43547810380_2.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1670819925",
+      "description": "Farbware Single Flip Waffle Maker, Used",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
+      "name": "Coleman Cooler", "price": "50", "offer": "0", "category": "Other",
+      "image": "https://di2ponv0v5otw.cloudfront.net/posts/2021/10/28/617b71d3e107bbc91ff41266/m_617b71f52e8e441263eaea70.jpg",
+      "description": "Coleman Marine Coastal Xtreme Cooler White, Brand New",
+      "ownerInformation": "bob@hawaii.edu or 808-888-8881",
+      "owner": "bob@hawaii.edu"
+    },
+    {
       "name": "Yamaha Guitar", "price": "169.66", "offer": "0", "category": "Instruments",
       "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSJBomLdyzD8R7u-Hpp6Ywn2_Rxc2kNgSOo2x-ZvTVH82B7puyLUZMS0Cw9GycFANwpT77v5QGb&usqp=CAc",
       "description": "Yamaha F325D Guitar",
@@ -54,6 +124,118 @@
       "description": "Nike Shoe for sale",
       "ownerInformation": "john@hawaii.edu or 808-888-8882",
       "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Crock Pot", "price": "10.00", "offer": "0", "category": "Appliances",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQAkdLeUIa3LjxNU2fOnyVMjH5fWBNP-uLhTuzVOiuNbczfi4tftZtdCMZCzmNsMMqwo6OCmtq7ejze8KIOwxsKIK7tS-zOPsT6rubqGsH9ZVCJVtk&usqp=CAE",
+      "description": "Crock Pot Slow Cooker, used",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Apple Watch", "price": "20.00", "offer": "0", "category": "Jewelry",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRrE88546hSOqG8b_mGQSKoxjU7Uw0p4B-WCPI9e1pFAsmmGfyM_XVyV-fYEDIjgtE1mwmjnGlBZ2vlmGa8n7QqU7wkvUeayVT0gt5gJsnDa65_Jkw&usqp=CAE",
+      "description": "Apple Watch Series 4 used",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Season 3 Jacket", "price": "200.00", "offer": "0", "category": "Clothing",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR-gkenAtbDfkqSsYTVCfUX3ATGEQb6pp1AEpWVDOano-N0JMES0cdrhskyU2n444M8WjhUwBsFt0aDK6QN34D91m8xPd9lMI6UZtcz8sK07iJoKT8&usqp=CAE",
+      "description": "Yeezy Season 3 Oversized Bomber Jacket Green, 7/10 condition",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Aldo Purse", "price": "10", "offer": "0", "category": "Purses",
+      "image": "https://i.ebayimg.com/images/g/DNUAAOSwDO1gVQ1i/s-l500.jpg",
+      "description": "Aldo Leather Purse, Used",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Futon", "price": "100", "offer": "0", "category": "Furniture",
+      "image": "https://di2ponv0v5otw.cloudfront.net/posts/2022/03/22/623a3365941f1792d5f44ec0/m_wp_623a337e4fd23a0fa206bbda.webp",
+      "description": "Grey reclining futon, used",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "The Singularity Is Near", "price": "9", "offer": "0", "category": "Books",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTZLmInrVg1ercoPI8Szonf_SckwzzHymjkuo5UFPWU8nY0oSzsHVLSBmW93-HYqmgiDSJwOIg-A6_FFflQQ5k4N6sN3vRrP5S8oKSPSvyyzD6PKlI&usqp=CAE",
+      "description": "Ray Kurzweil's The Singularity is Near, hardcover, in used condition ",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Nintendo Switch Bundle", "price": "75", "offer": "0", "category": "Toys",
+      "image": "https://www.capoth.com/image/cache/images/20220526/2838/250066-307eec8c29a5eb97ef8a55f3eea92bc3-400x400.jpg",
+      "description": "Nintendo Switch Bundle that comes with 7 games, signs of cosmetic wear but is fully operational and functional",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "Mechanical Keyboard", "price": "50", "offer": "0", "category": "Other",
+      "image": "https://u-mercari-images.mercdn.net/photos/m93187576936_1.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1650085955",
+      "description": "Unknown Brand Mechanical Keyboard White, Used",
+      "ownerInformation": "john@hawaii.edu or 808-888-8882",
+      "owner": "john@hawaii.edu"
+    },
+    {
+      "name": "White Rhodium Necklace", "price": "50.00", "offer": "0", "category": "Jewelry",
+      "image": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_2.0,f_auto,w_700/5510696_png/attract-necklace--square-cut--white--rhodium-plated-swarovski-5510696.png",
+      "description": "Swarovski necklace, brand new",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Devil Fruit Sweatshirt", "price": "40", "offer": "0", "category": "Clothing",
+      "image": "https://cdn.shopify.com/s/files/1/0014/2648/9388/products/ripple-junction-hoodies-outerwear-one-piece-devil-fruit-crew-sweatshirt-crunchyroll-exclusive-31854120992812_2000x2000.jpg?v=1665666408",
+      "description": "One Piece Devil Fruit Sweatshirt, brand new",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Kazoo", "price": "6", "offer": "0", "category": "Instruments",
+      "image": "https://assets.fivebelow.com/prod-hts/spree/images/1834154/main_image/6520055-00_A.jpg",
+      "description": "Big Sound Kazoo, brand new",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Couch", "price": "1000", "offer": "0", "category": "Furniture",
+      "image": "https://i.ebayimg.com/images/g/GZsAAOSwX79iLnue/s-l500.jpg",
+      "description": "Couch/Sofa, slightly used ",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Bamboo Kendama", "price": "10", "offer": "0", "category": "Toys",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS1g2lXdIzmethXPk773aqBbe1paCtmlUI1gDMhdHN1E8ndMyoFR1LhvAffO1U3bibWRrwD5V3jIuwFrETinEtp-TbGskVozWxDOMc",
+      "description": "RQN Bamboo Kendama W/extra string, brand new ",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Keurig", "price": "70", "offer": "0", "category": "Appliances",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQW1j2Kjnn3FtXqsTNM9bHofANNADAaS_RGZajl9p28nf_Tn1hYWpIQ6PNApB2kD9YqkqLdYiv5tT0zs5oK6waTTmTLzOGDcoNc2fxU3MNlgaCXjw&usqp=CAE",
+      "description": "Keurig Kitchen Coffee Maker, used but good condition",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Abacus", "price": "15", "offer": "0", "category": "Other",
+      "image": "https://i.ebayimg.com/images/g/5P8AAOxy4YdTSxxW/s-l500.jpg",
+      "description": "Japanese Soroban Abacus",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
+    },
+    {
+      "name": "Kate Spade Purse", "price": "35", "offer": "0", "category": "Purses",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQicBzszSrp2Vw10u09LaXTxpONS4F3S7qEl30cgBrtzMT5T2S_-zfiEoFenPrs_59gF2KT8fXaonM2Y95054zDREk45zXmpSHDrcP7MJLlZ5JWPEqsKED6qxFt8T0&usqp=CAE",
+      "description": "Kate Spade New York Model Number: LARGE PURSE Gently Used",
+      "ownerInformation": "sally@hawaii.edu or 808-888-8882",
+      "owner": "sally@hawaii.edu"
     },
     {
       "name": "Ukulele", "price": "40.00", "offer": "0", "category": "Instruments",
