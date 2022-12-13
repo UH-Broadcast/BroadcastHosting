@@ -17,8 +17,19 @@ import AddListing from '../pages/AddListing';
 import UserListings from '../pages/UserListings';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
 import AdminHome from '../pages/AdminHome';
-import Categories from '../pages/Categories';
+// import Categories from '../pages/Categories';
 import MakeOffer from '../pages/MakeOffer';
+import CategoryBar from '../Category pages/CategoryBar';
+import CategoryBarShoes from '../Category pages/CategoryBarShoes';
+import CategoryBarCloth from '../Category pages/CategoryBarCloth';
+import CategoryBarIns from '../Category pages/CategoryBarIns';
+import CategoryBarBooks from '../Category pages/CategoryBarBooks';
+import CategoryBarJewl from '../Category pages/CategoryBarJewl';
+import CategoryBarPur from '../Category pages/CategoryBarPur';
+import CategoryBarFur from '../Category pages/CategoryBarFur';
+import CategoryBarToys from '../Category pages/CategoryBarToys';
+import CategoryBarApp from '../Category pages/CategoryBarApp';
+import CategoryBarOther from '../Category pages/CategoryBarOther';
 import CommunityFeedback from '../pages/CommunityFeedback';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -32,8 +43,19 @@ const App = () => (
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signout" element={<SignOut />} />
         <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
-        <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} />
+        {/* <Route path="/categories" element={<ProtectedRoute><Categories /></ProtectedRoute>} /> */}
         <Route path="/list" element={<ProtectedRoute><UserListings /></ProtectedRoute>} />
+        <Route path="/ItemListing" element={<ProtectedRoute><CategoryBar /></ProtectedRoute>} />
+        <Route path="/CategoryBarShoes" element={<ProtectedRoute><CategoryBarShoes /></ProtectedRoute>} />
+        <Route path="/CategoryBarCloths" element={<ProtectedRoute><CategoryBarCloth /></ProtectedRoute>} />
+        <Route path="/CategoryBarIns" element={<ProtectedRoute><CategoryBarIns /></ProtectedRoute>} />
+        <Route path="/CategoryBarBooks" element={<ProtectedRoute><CategoryBarBooks /></ProtectedRoute>} />
+        <Route path="/CategoryBarJewl" element={<ProtectedRoute><CategoryBarJewl /></ProtectedRoute>} />
+        <Route path="/CategoryBarPur" element={<ProtectedRoute><CategoryBarPur /></ProtectedRoute>} />
+        <Route path="/CategoryBarFur" element={<ProtectedRoute><CategoryBarFur /></ProtectedRoute>} />
+        <Route path="/CategoryBarToys" element={<ProtectedRoute><CategoryBarToys /></ProtectedRoute>} />
+        <Route path="/CategoryBarApp" element={<ProtectedRoute><CategoryBarApp /></ProtectedRoute>} />
+        <Route path="/CategoryBarOther" element={<ProtectedRoute><CategoryBarOther /></ProtectedRoute>} />
         <Route path="/feedback" element={<CommunityFeedback />} />
         <Route path="/makeoffer/:_id" element={<MakeOffer />} />
         <Route path="/add" element={<ProtectedRoute><AddListing /></ProtectedRoute>} />
