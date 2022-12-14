@@ -36,7 +36,7 @@
     },
     {
       "name": "Air Jordan 11", "price": "780", "offer": "0", "category": "Shoes",
-      "image": "https://images.complex.com/complex/images/c_fill,dpr_2.0,f_auto,q_auto,w_1400/fl_lossy,pg_1/nqyq1tt3zvpcrgyaiaiw/air-jordan-11-concord?fimg-ssr",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.aVD-GnGQKey9uWL9sKgP2QHaFc&pid=Api&P=0",
       "description": "concord retro 11s",
       "ownerInformation": "admin@hawaii.edu or 808-888-8881",
       "owner": "admin@hawaii.edu"
@@ -50,14 +50,14 @@
     },
     {
       "name": "New Balance Shoes", "price": "95", "offer": "0", "category": "Shoes",
-      "image": "https://images.stockx.com/360/New-Balance-550-White-Mint-Green/Images/New-Balance-550-White-Mint-Green/Lv2/img01.jpg?fm=avif&auto=compress&w=576&dpr=2&updated_at=1651237464&h=384&q=60",
-      "description": "White and Green New Balance 550",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.XyBAYmjKD09oL7PKZ5EH8AHaHa&pid=Api&P=0",
+      "description": "New Balance Shoes. Never worn.",
       "ownerInformation": "bob@hawaii.edu or 808-888-8881",
       "owner": "bob@hawaii.edu"
     },
     {
       "name": "Kkoch Hoodie", "price": "95", "offer": "0", "category": "Clothing",
-      "image": "https://images.stockx.com/images/Anti-Social-Social-Club-Kkoch-Hoodie-Black-2.jpg?fit=fill&bg=FFFFFF&w=576&h=384&fm=avif&auto=compress&dpr=2&trim=color&updated_at=1611841873&q=60",
+      "image": "https://images.stockx.com/images/Anti-Social-Social-Club-Kkoch-Hoodie-Black-2.jpg",
       "description": "Anti Social Social Club Kkoch Hoodie Black brand new",
       "ownerInformation": "bob@hawaii.edu or 808-888-8881",
       "owner": "bob@hawaii.edu"
@@ -120,7 +120,7 @@
     },
     {
       "name": "Nike Shoe", "price": "75.00", "offer": "0", "category": "Shoes",
-      "image": "/images/item2-example.png",
+      "image": "https://n4.sdlcdn.com/imgs/g/0/i/Nike-Multi-Color-Casual-Shoes-SDL051199315-3-f1d88.JPG",
       "description": "Nike Shoe for sale",
       "ownerInformation": "john@hawaii.edu or 808-888-8882",
       "owner": "john@hawaii.edu"
@@ -155,7 +155,7 @@
     },
     {
       "name": "Futon", "price": "100", "offer": "0", "category": "Furniture",
-      "image": "https://di2ponv0v5otw.cloudfront.net/posts/2022/03/22/623a3365941f1792d5f44ec0/m_wp_623a337e4fd23a0fa206bbda.webp",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTes_A5HRtr4whrDH7QpmN97WZPP4sMf-dytA&usqp=CAU",
       "description": "Grey reclining futon, used",
       "ownerInformation": "john@hawaii.edu or 808-888-8882",
       "owner": "john@hawaii.edu"
