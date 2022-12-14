@@ -49,7 +49,7 @@ const AddListing = () => {
     <Container id="add-listing-page" className="py-3">
       <Row className="justify-content-center">
         <Col xs={5}>
-          <Col className="text-center"><h2>Add Listing</h2></Col>
+          <Col className="text-center m-5"><h2 style={{ fontSize: '40px', fontFamily: 'Academy Engraved LET', color: 'white' }}>Add Listing</h2></Col>
           <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => submit(data, fRef)}>
             <Card>
               <Card.Body>

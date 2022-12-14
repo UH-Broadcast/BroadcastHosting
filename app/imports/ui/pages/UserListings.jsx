@@ -28,7 +28,7 @@ const UserListings = () => {
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">
-            <h2>User Items</h2>
+            <h2 className="m-5" style={{ fontSize: '40px', fontFamily: 'Academy Engraved LET', color: 'white' }}>User Items</h2>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-4">
             {items.map((item) => (<Col key={item._id}><UserItems item={item} collection={ItemsDatabase.collection} /> </Col>))}
