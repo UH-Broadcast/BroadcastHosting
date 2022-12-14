@@ -42,7 +42,7 @@ const CategoryBarShoes = () => {
           </Nav>
         </Navbar>
         <div>
-          <Row xs={1} md={2} lg={3} className="g-4">
+          <Row xs={1} md={2} lg={3} className="g-4 m-5">
             {items.map((item) => (
               <Col key={item._id}><AllItems item={item} collection={ItemsDatabase.collection} /> <br /></Col>))}
           </Row>
