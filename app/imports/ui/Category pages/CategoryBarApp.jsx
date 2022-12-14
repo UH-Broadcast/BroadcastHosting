@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
-import { Col, Nav, Navbar, Row, Container } from 'react-bootstrap';
+import { Col, Nav, Navbar, Row } from 'react-bootstrap';
 import { ItemsDatabase } from '../../api/Items/Item';
 import LoadingSpinner from '../components/LoadingSpinner';
 import AllItems from '../components/AllItems';
@@ -41,12 +41,12 @@ const CategoryBarApp = () => {
             <Nav.Link id="every-item-categories-navBarOther" as={NavLink} to="/CategoryBarOther" key="itemBarOther" style={{ color: 'black' }}>Other</Nav.Link>
           </Nav>
         </Navbar>
-        <Container>
-          <Row xs={1} md={2} lg={3} className="g-4">
+        <div>
+          <Row xs={1} md={2} lg={3} className="g-4 m-5">
             {items.map((item) => (
               <Col key={item._id}><AllItems item={item} collection={ItemsDatabase.collection} /> <br /></Col>))}
           </Row>
-        </Container>
+        </div>
       </Col>
     </Row>
   ) : <LoadingSpinner />);
