@@ -30,7 +30,6 @@ import CategoryBarFur from '../Category pages/CategoryBarFur';
 import CategoryBarToys from '../Category pages/CategoryBarToys';
 import CategoryBarApp from '../Category pages/CategoryBarApp';
 import CategoryBarOther from '../Category pages/CategoryBarOther';
-import CommunityFeedback from '../pages/CommunityFeedback';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 const App = () => (
@@ -56,7 +55,6 @@ const App = () => (
         <Route path="/CategoryBarToys" element={<ProtectedRoute><CategoryBarToys /></ProtectedRoute>} />
         <Route path="/CategoryBarApp" element={<ProtectedRoute><CategoryBarApp /></ProtectedRoute>} />
         <Route path="/CategoryBarOther" element={<ProtectedRoute><CategoryBarOther /></ProtectedRoute>} />
-        <Route path="/feedback" element={<CommunityFeedback />} />
         <Route path="/makeoffer/:_id" element={<MakeOffer />} />
         <Route path="/add" element={<ProtectedRoute><AddListing /></ProtectedRoute>} />
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />

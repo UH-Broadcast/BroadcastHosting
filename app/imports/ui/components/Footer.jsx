@@ -11,10 +11,6 @@ const Footer = () => (
           UH Broadcast Home Page
         </a>
         <br />
-        <a href="/feedback">
-          Community Feedback
-        </a>
-        <br />
         Department of Information and Computer Sciences
         {' '}
         <br />
