@@ -66,7 +66,7 @@ class NavBar {
   }
 
   async gotoCategoriesPage(testController) {
-    await testController.click('#every-item-categories-nav');
+    await testController.click('#every-item-categories-navBar');
   }
 }
 

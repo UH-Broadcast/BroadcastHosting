@@ -24,7 +24,7 @@ const CategoryBar = () => {
     };
   }, []);
   return (ready ? (
-    <Row>
+    <Row id="categories-page">
       <Col>
         <Navbar bg="light" expand="lg" id="catBar">
           <Nav className="justify-content-end">

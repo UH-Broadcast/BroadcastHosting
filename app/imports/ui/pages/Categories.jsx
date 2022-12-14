@@ -23,7 +23,7 @@ const Categories = () => {
     };
   }, []);
   return (ready ? (
-    <Container id="categories-page" className="py-3">
+    <Container className="py-3">
       <Row className="justify-content-center">
         <Col>
           <Col className="text-center">

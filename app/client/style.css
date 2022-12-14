@@ -82,11 +82,3 @@ footer, footer a {
 #catBar{
   color: darkgray;
 }
-
-#landing-page {
-  background-image: url("images/ManoaWallpaper.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-
-}
