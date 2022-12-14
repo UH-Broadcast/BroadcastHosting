@@ -16,7 +16,7 @@ import NotAuthorized from '../pages/NotAuthorized';
 import AddListing from '../pages/AddListing';
 import UserListings from '../pages/UserListings';
 import ListItemsAdmin from '../pages/ListItemsAdmin';
-import AdminHome from '../pages/AdminHome';
+// import AdminHome from '../pages/AdminHome';
 // import Categories from '../pages/Categories';
 import MakeOffer from '../pages/MakeOffer';
 import CategoryBar from '../Category pages/CategoryBar';
@@ -61,7 +61,7 @@ const App = () => (
         <Route path="/add" element={<ProtectedRoute><AddListing /></ProtectedRoute>} />
         <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
         <Route path="/adminitem" element={<AdminProtectedRoute><ListItemsAdmin /></AdminProtectedRoute>} />
-        <Route path="/adminhome" element={<AdminProtectedRoute><AdminHome /></AdminProtectedRoute>} />
+        {/* <Route path="/adminhome" element={<AdminProtectedRoute><AdminHome /></AdminProtectedRoute>} /> */}
         <Route path="/notauthorized" element={<NotAuthorized />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
