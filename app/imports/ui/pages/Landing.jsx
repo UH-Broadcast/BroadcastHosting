@@ -1,7 +1,5 @@
 import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import ItemDetails from '../components/ItemDetails';
+import { Container } from 'react-bootstrap';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
