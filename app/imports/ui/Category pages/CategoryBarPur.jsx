@@ -2,7 +2,7 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { useTracker } from 'meteor/react-meteor-data';
 import { NavLink } from 'react-router-dom';
-import { Col, Nav, Navbar, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { ItemsDatabase } from '../../api/Items/Item';
 import LoadingSpinner from '../components/LoadingSpinner';
 import AllItems from '../components/AllItems';
@@ -26,8 +26,8 @@ const CategoryBarPur = () => {
   return (ready ? (
     <Row>
       <Col>
-        <Navbar bg="light" expand="lg" id="catBar">
-          <Nav className="me-auto justify-content-start">
+        <Navbar bg="light" expand="lg" id="catBar" className="justify-content-center">
+          <Nav className="justify-content-end">
             <Nav.Link id="every-item-categories-navBar" as={NavLink} to="/ItemListing" key="itemBar" style={{ color: 'black' }}>All Items</Nav.Link>
             <Nav.Link id="every-item-categories-navBarShoes" as={NavLink} to="/CategoryBarShoes" key="itemBarShoes" style={{ color: 'black' }}>Shoes</Nav.Link>
             <Nav.Link id="every-item-categories-navBarCloths" as={NavLink} to="/CategoryBarCloths" key="itemBarCloths" style={{ color: 'black' }}>Clothing</Nav.Link>
@@ -41,12 +41,12 @@ const CategoryBarPur = () => {
             <Nav.Link id="every-item-categories-navBarOther" as={NavLink} to="/CategoryBarOther" key="itemBarOther" style={{ color: 'black' }}>Other</Nav.Link>
           </Nav>
         </Navbar>
-        <div>
+        <Container>
           <Row xs={1} md={2} lg={3} className="g-4 m-5">
             {items.map((item) => (
               <Col key={item._id}><AllItems item={item} collection={ItemsDatabase.collection} /> <br /></Col>))}
           </Row>
-        </div>
+        </Container>
       </Col>
     </Row>
   ) : <LoadingSpinner />);

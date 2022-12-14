@@ -26,7 +26,7 @@ const CategoryBar = () => {
   return (ready ? (
     <Row id="categories-page">
       <Col>
-        <Navbar bg="light" expand="lg" id="catBar">
+        <Navbar bg="light" expand="lg" id="catBar" className="justify-content-center">
           <Nav className="justify-content-end">
             <Nav.Link id="every-item-categories-navBar" as={NavLink} to="/ItemListing" key="itemBar" style={{ color: 'black' }}>All Items</Nav.Link>
             <Nav.Link id="every-item-categories-navBarShoes" as={NavLink} to="/CategoryBarShoes" key="itemBarShoes" style={{ color: 'black' }}>Shoes</Nav.Link>
