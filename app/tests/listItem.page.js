@@ -11,11 +11,6 @@ class ListItemPage {
     // This is first test to be run. Wait 10 seconds to avoid timeouts with GitHub Actions.
     await testController.wait(10000).expect(this.pageSelector.exists).ok();
   }
-
-  /** go to makeoffer page from listitem page */
-  async gotoMakeOfferPage(testController) {
-    await testController.click('#make-offer-list');
-  }
 }
 
 export const listItemPage = new ListItemPage();
