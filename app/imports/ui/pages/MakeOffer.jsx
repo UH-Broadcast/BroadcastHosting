@@ -13,7 +13,7 @@ const bridge = new SimpleSchema2Bridge(ItemsDatabase.schema);
 
 const MakeOffer = () => {
   const { _id } = useParams();
-  console.log('MakeOffer', _id);
+  // console.log('MakeOffer', _id);
   // useTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
   const { ready, items } = useTracker(() => {
     // Get access to Items database.

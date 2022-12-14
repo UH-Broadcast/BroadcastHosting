@@ -44,17 +44,17 @@ test('Test the Add Listing page', async (testController) => {
   await addListingPage.addListing(testController);
 });
 
-test('Test the Make Offer page', async (testController) => {
+test('Test the Make Offer', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
-  await navBar.gotoListItemPage(testController);
-  await listItemPage.isDisplayed(testController);
-  await listItemPage.gotoMakeOfferPage(testController);
+  await navBar.gotoCategoriesPage(testController);
+  await categoriesPage.isDisplayed(testController);
+  await categoriesPage.gotoMakeOfferPage(testController);
   await makeOfferPage.isDisplayed(testController);
   await makeOfferPage.makeOffer(testController);
 });
 
-test('Test the Categories page', async (testController) => {
+test('Test the Items For Sale page', async (testController) => {
   await navBar.gotoSignInPage(testController);
   await signinPage.signin(testController, credentials.username, credentials.password);
   await navBar.gotoCategoriesPage(testController);
