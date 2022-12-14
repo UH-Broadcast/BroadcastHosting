@@ -27,8 +27,8 @@ const ListItemsAdmin = () => {
     <Container className="py-3">
       <Row className="justify-content-center">
         <Col>
-          <Col className="text-center">
-            <h2>List Items</h2>
+          <Col className="text-center m-5">
+            <h2 style={{ fontSize: '40px', fontFamily: 'Academy Engraved LET', color: 'white' }}>List Items</h2>
           </Col>
           <Row xs={1} md={2} lg={3} className="g-4">
             {items.map((item) => (<Col key={item._id}><ItemsAdmin item={item} collection={ItemsDatabase.collection} /> </Col>))}

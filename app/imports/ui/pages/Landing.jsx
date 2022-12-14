@@ -5,37 +5,10 @@ import ItemDetails from '../components/ItemDetails';
 
 /* A simple static component to render some text for the landing page. */
 const Landing = () => (
-  <Container id="landing-page" fluid className="py-3">
-    <Row className="align-middle text-center">
-      <Col className="d-flex flex-column justify-content-center">
-        <h1>Welcome to UH Broadcast</h1>
-        <h3>Commerce, products, and services available for the UH Community</h3>
-      </Col>
-    </Row>
-    <Container className="justify-content-center text-center">
-      <h2 style={{ color: '#376551' }}>Recent</h2>
-      <Row md={1} lg={2}>
-        <Col xs={6}>
-          <Link to={`/makeoffer/${ItemDetails._id}`}>
-            <Image src="/images/item1-example.png" width={250} />
-          </Link>
-        </Col>
-        <Col xs={6}>
-          <a href="/list">
-            <Image src="/images/item2-example.png" width={250} />
-          </a>
-        </Col>
-        <Col xs={6}>
-          <a href="/list">
-            <Image src="/images/item3-example.png" width={250} />
-          </a>
-        </Col>
-        <Col xs={6}>
-          <a href="/list">
-            <Image src="/images/item4-example.png" width={250} />
-          </a>
-        </Col>
-      </Row>
+  <Container fluid className="py-3 h-100">
+    <h1 className="text-center align-middle" style={{ fontSize: '80px', fontFamily: 'Academy Engraved LET', color: 'white' }}>UH Broadcast</h1>
+    <Container className="justify-content-center">
+      <h3 className="text-center m-3" style={{ fontSize: '40px', fontFamily: 'Academy Engraved LET', color: 'white' }}>Commerce, products, and services available for the UH Community</h3>
     </Container>
   </Container>
 );

@@ -15,6 +15,10 @@
 body {
   --bs-dark: var(--matr-navbar-bg);
   --bs-dark-rgb: var(--matr-navbar-bg-rgb);
+  background-image: url("images/ManoaWallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 
@@ -32,10 +36,6 @@ body .navbar {
 
 footer, footer a {
   color: var(--matr-navbar-text-color);
-}
-
-.landing-page-white {
-
 }
 
 .landing-page-white {
@@ -81,4 +81,12 @@ footer, footer a {
 
 #catBar{
   color: darkgray;
+}
+
+#landing-page {
+  background-image: url("images/ManoaWallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
 }
