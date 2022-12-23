@@ -27,7 +27,7 @@ jobs:
 
       - uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '16.x '
 
       - run: npm ci --legacy-peer-deps
       - uses: meteorengineer/setup-meteor@v1
